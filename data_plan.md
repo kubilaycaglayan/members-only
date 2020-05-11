@@ -15,3 +15,8 @@ sign_in => members
 
 CLUBHOSE
 members can write posts about non-members
+
+# Post Model
+
+body
+belongs_to :user

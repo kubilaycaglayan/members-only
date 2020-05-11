@@ -11,8 +11,13 @@
   </thead>
 
   <tbody>
+
     <% @posts.each do |post| %>
-      <tr>
+    <tr>
+      <% if user_signed_in? %>
+      <td><%= post.user.name %></td>
+      <% end %>
+      
         <td><%= post.body %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
@@ -20,8 +25,11 @@
       </tr>
     <% end %>
   </tbody>
+
 </table>
 
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+<%= link_to 'Log In', new_user_session_path %>
+<%= link_to 'Log Out', destroy_user_session_path %>

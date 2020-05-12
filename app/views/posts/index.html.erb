@@ -1,11 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Posts</h1>
+<h1>Exclusive Clubhouse</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Body</th>
+<% if user_signed_in? %>
+    <th>Author Name</th>
+    <% end %>
+      <th>Gossips</th>
       <th colspan="3"></th>
     </tr>
   </thead>

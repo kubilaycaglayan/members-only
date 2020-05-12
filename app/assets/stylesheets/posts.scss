@@ -2,6 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-html {
-  background-color: rgb(214, 181, 214);
+.heading-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  
+}
+
+.box {
+  padding: 1rem;
+  
+}  
+  .btn {
+    background-color: rgb(52, 52, 135);
+    border: 1px solid rgb(142, 98, 16);
+    border-radius: 15%;
+    color: white;
+    padding: 5px;
+    text-emphasis: none;
+    text-decoration: none;
+  }
+
+.buttons {
+  width: 100%;
+  text-align: center;
+
+  .btn {
+    font-size: 22px;
+    padding: 10px;
+    margin: 5px;
+  }
 }

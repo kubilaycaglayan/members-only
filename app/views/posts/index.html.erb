@@ -1,6 +1,6 @@
-<h1>Exclusive Clubhouse</h1>
+<h1 class="heading-title">Exclusive Clubhouse</h1>
 
-<table>
+<table class="box">
   <thead>
     <tr>
 <% if user_signed_in? %>
@@ -21,9 +21,9 @@
       
         <td><%= post.body %></td>
         <% if user_signed_in? %>
-          <td><%= link_to 'Show', post %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Show', post, class: "btn" %></td>
+          <td><%= link_to 'Edit', edit_post_path(post), class: "btn" %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, class: "btn", data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
     <% end %>
@@ -32,7 +32,12 @@
 </table>
 
 <br>
-
-<%= link_to 'New Post', new_post_path %>
-<%= link_to 'Log In', new_user_session_path %>
-<%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+  <div class="buttons">
+<% if user_signed_in? %>
+      <%= link_to 'New Post', new_post_path, class: "btn" %>
+      <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "btn" %>
+    <% else %>
+      <%= link_to 'Log In', new_user_session_path, class: "btn" %>
+      <%= link_to 'Create Account', new_user_registration_path %>
+<%end %>
+  </div>

@@ -2681,3 +2681,86 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 12591)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "damion.ledner@ritchiedaugherty.biz"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Hercules"], ["member_status", 1], ["created_at", "2020-05-12 08:13:22.292154"], ["updated_at", "2020-05-12 08:13:22.292154"], ["email", "damion.ledner@ritchiedaugherty.biz"], ["encrypted_password", "$2a$11$Jn1ZM2oXcxQxCJL.TxpVI.z..QK8UgMzCpQwq0k.sSE5oE9Ed04YS"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Create (0.1ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "This one time,\n  a giant bouquet of flowers was delivered to the office \n  with my name on it."], ["created_at", "2020-05-12 08:13:22.315844"], ["updated_at", "2020-05-12 08:13:22.315844"], ["user_id", 4]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tracy@ullrich.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Medusa"], ["member_status", 1], ["created_at", "2020-05-12 08:13:22.432615"], ["updated_at", "2020-05-12 08:13:22.432615"], ["email", "tracy@ullrich.name"], ["encrypted_password", "$2a$11$9qO14FTqGlzw0t8VIq6N8.BxagWw3x85TMCFLgdg41dm3Ey0Mt0Gq"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPost Create (0.1ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "Last year, I had a crush on this Paraguayan boy \n  from college. I always tried to dress up for that class we had."], ["created_at", "2020-05-12 08:13:22.444621"], ["updated_at", "2020-05-12 08:13:22.444621"], ["user_id", 5]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "julianne@johnsonweimann.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cassandra"], ["member_status", 1], ["created_at", "2020-05-12 08:13:22.555907"], ["updated_at", "2020-05-12 08:13:22.555907"], ["email", "julianne@johnsonweimann.name"], ["encrypted_password", "$2a$11$Hvki1cSHnkTFyFddMpXLBexBKqhCDcmAbgNXgskoOiwe4hitevLU2"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "Until he said: 'Because I am in love with you, Miriã. I love you\n  and I've told you that thousands of times.' I was in shock"], ["created_at", "2020-05-12 08:13:22.569659"], ["updated_at", "2020-05-12 08:13:22.569659"], ["user_id", 6]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "annalee@lind.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Aeneas"], ["member_status", 1], ["created_at", "2020-05-12 08:13:22.680066"], ["updated_at", "2020-05-12 08:13:22.680066"], ["email", "annalee@lind.com"], ["encrypted_password", "$2a$11$rxIc2hU6AlOr3Re98lKpMeghoi1MEvD6eVHwdIa23D.baaVmbZ1MW"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "Last year, I had a crush on this Paraguayan boy \n  from college. I always tried to dress up for that class we had."], ["created_at", "2020-05-12 08:13:22.690185"], ["updated_at", "2020-05-12 08:13:22.690185"], ["user_id", 7]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raymond_kautzer@kuvalis.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Deianeira"], ["member_status", 1], ["created_at", "2020-05-12 08:13:22.797488"], ["updated_at", "2020-05-12 08:13:22.797488"], ["email", "raymond_kautzer@kuvalis.name"], ["encrypted_password", "$2a$11$Lid1CRGqfheXe/eWf3QDaubx8r4nyapksCq2LPOpAz0yESBXCq2SC"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "Last year, I had a crush on this Paraguayan boy \n  from college. I always tried to dress up for that class we had."], ["created_at", "2020-05-12 08:13:22.809192"], ["updated_at", "2020-05-12 08:13:22.809192"], ["user_id", 8]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tony_goyette@collier.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ajax"], ["member_status", 1], ["created_at", "2020-05-12 08:13:22.920480"], ["updated_at", "2020-05-12 08:13:22.920480"], ["email", "tony_goyette@collier.name"], ["encrypted_password", "$2a$11$ktzVNvWAh203Bft4B69OXezWxi3pYNW0uNv0bX8hpmkTCMxveQiVa"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "Last year, I had a crush on this Paraguayan boy \n  from college. I always tried to dress up for that class we had."], ["created_at", "2020-05-12 08:13:22.933321"], ["updated_at", "2020-05-12 08:13:22.933321"], ["user_id", 9]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stephanie.orn@gislasonbauch.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Pandora"], ["member_status", 1], ["created_at", "2020-05-12 08:13:23.059325"], ["updated_at", "2020-05-12 08:13:23.059325"], ["email", "stephanie.orn@gislasonbauch.org"], ["encrypted_password", "$2a$11$KuBC.Cez3sFmzLaoX9P0Ze2dti5sPBG6sBkWK185.eNxqc49Tshgi"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "I had been admiring this \n  girl from a distance for months, because I had zero guts to \n  go up and talk to her."], ["created_at", "2020-05-12 08:13:23.074834"], ["updated_at", "2020-05-12 08:13:23.074834"], ["user_id", 10]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "chasity@lakin.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Clytemnestra"], ["member_status", 1], ["created_at", "2020-05-12 08:13:23.193154"], ["updated_at", "2020-05-12 08:13:23.193154"], ["email", "chasity@lakin.name"], ["encrypted_password", "$2a$11$RQbH74wUaSiw7uxeQ5RRp.LUyXKTrflUz8S//.01ehHuTcShB2ihm"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "At the end of the day, I lost the bouquet \n  and my man, because he thought I was cheating on him with \n  somebody else."], ["created_at", "2020-05-12 08:13:23.209465"], ["updated_at", "2020-05-12 08:13:23.209465"], ["user_id", 11]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ma@roberts.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Orpheus"], ["member_status", 1], ["created_at", "2020-05-12 08:13:23.323457"], ["updated_at", "2020-05-12 08:13:23.323457"], ["email", "ma@roberts.name"], ["encrypted_password", "$2a$11$XbCruKgM8z42t28V8xk9L.8uIRXSwttHQ5qdONnFMDkVFax6/.W2e"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "At the end of the day, I lost the bouquet \n  and my man, because he thought I was cheating on him with \n  somebody else."], ["created_at", "2020-05-12 08:13:23.343539"], ["updated_at", "2020-05-12 08:13:23.343539"], ["user_id", 12]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "buster.kshlerin@ferry.name"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "member_status", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Achilles"], ["member_status", 1], ["created_at", "2020-05-12 08:13:23.458003"], ["updated_at", "2020-05-12 08:13:23.458003"], ["email", "buster.kshlerin@ferry.name"], ["encrypted_password", "$2a$11$I1hmdy2srWXmzsWGRCJm5eg21idnT8po.BnyA52cjPb0y3WJWTEVK"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["body", "This one time,\n  a giant bouquet of flowers was delivered to the office \n  with my name on it."], ["created_at", "2020-05-12 08:13:23.475066"], ["updated_at", "2020-05-12 08:13:23.475066"], ["user_id", 13]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m

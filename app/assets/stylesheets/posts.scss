@@ -21,6 +21,8 @@
     padding: 5px;
     text-emphasis: none;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
 .buttons {
@@ -32,4 +34,15 @@
     padding: 10px;
     margin: 5px;
   }
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: rgb(198, 108, 13);
+  cursor: pointer;
+}
+
+.field_with_errors {
+  width: min-content;
+  margin: 0 auto;
 }

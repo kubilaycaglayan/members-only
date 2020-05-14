@@ -1,0 +1,48 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.heading-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  
+}
+
+.box {
+  padding: 1rem;
+  
+}  
+  .btn {
+    background-color: rgb(52, 52, 135);
+    border: 1px solid rgb(142, 98, 16);
+    border-radius: 15%;
+    color: white;
+    padding: 5px;
+    text-emphasis: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.buttons {
+  width: 100%;
+  text-align: center;
+
+  .btn {
+    font-size: 22px;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: rgb(198, 108, 13);
+  cursor: pointer;
+}
+
+.field_with_errors {
+  width: min-content;
+  margin: 0 auto;
+}

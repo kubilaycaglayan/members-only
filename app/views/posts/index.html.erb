@@ -1,0 +1,38 @@
+<h1 class="heading-title">Exclusive Clubhouse</h1>
+
+<table class="box">
+  <thead>
+    <tr>
+<% if user_signed_in? %>
+    <th>Author Name</th>
+    <% end %>
+      <th>Gossips</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <% @posts.each do |post| %>
+    <tr>
+      <% if user_signed_in? %>
+      <td><%= post.user.name %></td>
+      <% end %>
+      
+        <td><%= post.body %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<br>
+  <div class="buttons">
+<% if user_signed_in? %>
+      <%= link_to 'New Post', new_post_path, class: "btn" %>
+      <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "btn" %>
+    <% else %>
+      <%= link_to 'Log In', new_user_session_path, class: "btn" %>
+      <%= link_to 'Create Account', new_user_registration_path, class: "btn" %>
+<%end %>
+  </div>

@@ -26,7 +26,7 @@ Kubilay Caglayan
 - After you create a new user, you can see the names of the gossips and create new posts.
 
 # Home Page
-![members only](https://user-images.githubusercontent.com/60448833/81669077-530de180-944e-11ea-81bd-9da23b80f8d6.png
+![members only](https://user-images.githubusercontent.com/60448833/81669077-530de180-944e-11ea-81bd-9da23b80f8d6.png)
 
 # Automated Test Section
 There are no automated test for this project yet
